@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "gcodezaa"
+name = "fdmfc"
 version = "0.1.0"
 description = "GCode post-processing script for z anti-aliasing or simple non-planar top surfaces"
 authors = ["Thea Schöbl <dev@theaninova.de>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"
 package-mode = false
+packages = [{ include = "fdmfc", from = "." }]
 
 [tool.poetry.dependencies]
 python = "^3.11.0"
@@ -17,4 +18,3 @@ addict = "^2.4.0"
 pillow = "^11.0.0"
 pandas = "^2.2.3"
 tqdm = "^4.67.1"
-
